@@ -292,7 +292,14 @@ h3 {
   width: 100%;
   border: 0;
 }
-
+/* CHANGE BACKGRound COLOR ON LINKS */
+/* when option is ! black*/
+li[color="false"] {
+  color: gray;
+}
+li[color]:hover {
+  color: red;
+}
 /*.catch-of-the-day > * {
   -webkit-box-flex: 1;
       -ms-flex: 1 4 auto;

@@ -18,14 +18,15 @@ class HomePage extends React.Component {
     return(
       <form className="page-selector" onSubmit={this.goToApp}>
         <h2>HOME page</h2>
-        <input type="text" required placeholder="name of your app" defaultValue="React App1"
+        <input type="text" required placeholder="name of your app" defaultValue="React-App1"
           ref={(input) => { this.storeInput = input }} />
+
         <button type="submit">Go to your app</button>
       </form>
     )
   }
 }
-// tell React that HomePage comp is expecting a router
+// tell React that HomePage comp is expecting a router that appears via CONTEXT
 HomePage.contextTypes = {
   router: React.PropTypes.object
 }

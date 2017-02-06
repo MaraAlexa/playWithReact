@@ -1,9 +1,13 @@
 import React from 'react';
-Link
+
 class Link extends React.Component {
   render() {
+    const { details } = this.props;
+    const black = details.color === "black-text";
     return(
-      <li>{this.props.details.name}</li>
+      <li className="name-link" color={black}>
+        {this.props.details.name}
+      </li>
     )
   }
 }

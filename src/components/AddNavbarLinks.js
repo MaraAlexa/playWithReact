@@ -16,8 +16,8 @@ class AddNavbarLinks extends React.Component {
       <form ref={(input) => this.linkForm = input} className="edit-links" onSubmit={(e) => this.createLink(e)}>
         <input ref={(input) => this.name = input} type="text" placeholder="Link Name"/>
         <select ref={(input) => this.color = input}>
-          <option value="white-bg">White</option>
-          <option value="black-bg">Black</option>
+          <option value="white-text">Gray</option>
+          <option value="black-text">Black</option>
         </select>
         <button type="submit"> Add Link</button>
       </form>
